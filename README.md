@@ -40,6 +40,7 @@ Response
         "name": "Exam 2"
     }
 }
+```
 
 PUT /exams/:id
 
