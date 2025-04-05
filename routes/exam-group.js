@@ -24,6 +24,14 @@ const exams = [
     
 ]
 
+router.post("/exams", (req, res) => {
+    const {id, name} = req.body;
+    const newUser = {id: parseInt(id), name};
+    users.push(newUser);
+    res.send({message: "User created successfully", user: newUser});
+});
+
+
 router.get("/exam-group", (req, res) => {
   res.send({message: "GROUP A API"});
 });
