@@ -5,6 +5,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
+//API
 app.use('/uc', require('./routes/exam-group.js'));
 
 app.listen(3000, () => {
