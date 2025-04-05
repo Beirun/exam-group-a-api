@@ -10,6 +10,14 @@
 
 # API Documentation
 
+GET /exam-group
+
+Response
+```
+{
+    "message": "GROUP A API"
+}
+```
 
 GET /exams
 
