@@ -28,4 +28,10 @@ router.get("/exam-group", (req, res) => {
   res.send({message: "GROUP A API"});
 });
 
+
+router.get("/exams", (req, res) => {
+    res.send({users: users});
+});
+
+
 module.exports = router;
