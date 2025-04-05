@@ -16,8 +16,20 @@ GET /exams
 Response
 ```
 {
-    "id": 1,
-    "name": "Exam 1"
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe"
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe"
+        },
+        {
+            "id": 3,
+            "name": "John Smith"
+        }
+    ]
 }
 ```
 
