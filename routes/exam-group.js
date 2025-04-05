@@ -26,9 +26,9 @@ const exams = [
 
 router.post("/exams", (req, res) => {
     const {id, name} = req.body;
-    const newUser = {id: parseInt(id), name};
-    users.push(newUser);
-    res.send({message: "User created successfully", user: newUser});
+    const newExam = {id: parseInt(id), name};
+    exams.push(newExam);
+    res.send({message: "Exam created successfully", exam: newExam});
 });
 
 
