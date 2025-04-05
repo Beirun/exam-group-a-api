@@ -42,4 +42,17 @@ router.get("/exams", (req, res) => {
 });
 
 
+router.put("/exams/:id", (req, res) => {
+    const {id} = req.params;
+    const {name} = req.body;
+    
+    const exam = exams.find(exam => exam.id === parseInt(id));
+    if (!exam) {
+        return res.status(404).send({message: "Exam not found"});
+    }
+    exam.name = name;
+    res.send({message: "Exam updated successfully", exam: exam});
+});
+
+
 module.exports = router;
